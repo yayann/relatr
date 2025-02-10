@@ -27,7 +27,10 @@ class RelationSeeder extends Seeder
         foreach ($providers as $provider) {
             $randomProviders = $providers->where('id', '!=', $provider->id)->random(rand(1, 3));
             foreach ($randomProviders as $randomProvider) {
-                $provider->toProviders()->attach($randomProvider->id);
+                if (!$provider->toProviders()->where('to_provider_id', $randomProvider->id)->exists() &&
+                    !$randomProvider->toProviders()->where('to_provider_id', $provider->id)->exists()) {
+                    $provider->toProviders()->attach($randomProvider->id);
+                }
             }
         }
     }
