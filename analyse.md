@@ -38,3 +38,7 @@ Les _edges_ représenteront les relations entre les Providers.
 Je pense que GoJS est la meilleure option pour ce cas. La licence payante assure un support de qualité et rassure sur
 la pérennité du projet. Le degré de customisation possible pour les noeuds est un grand avantage pour représenter les
 acteurs et les fournisseurs de manière claire et adaptée.
+
+
+## POC
+![POC](resources/img/screenshot.png)
