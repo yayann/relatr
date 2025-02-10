@@ -13,6 +13,6 @@ class ConsumerSeeder extends Seeder
      */
     public function run(): void
     {
-        Consumer::factory()->count(10)->create();
+        Consumer::factory()->count(20)->create();
     }
 }

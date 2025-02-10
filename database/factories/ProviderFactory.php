@@ -18,7 +18,7 @@ class ProviderFactory extends Factory
     {
 
         return [
-            'name' => $this->faker->unique()->company,
+            'name' => $this->faker->unique()->jobTitle . ' ' . $this->faker->randomElement(['Provider', 'Company']),
             'type' => $this->faker->randomElement(['actor', 'influencer']),
         ];
     }
