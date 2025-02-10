@@ -54,5 +54,4 @@ onMounted(() => {
 </template>
 
 <style>
-/* Add any additional styles if needed */
 </style>
